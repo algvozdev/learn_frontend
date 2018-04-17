@@ -8,7 +8,7 @@
     <body>
         <div class="wrapper">
             <div class="header">
-                <img src="images/logo.svg" alt="hh.ru">
+                <img class="header-logo"src="images/logo.svg" alt="hh.ru">
                 <form class="search">
                     <input type="text" class="search-name">
                     <select class="search-type">
@@ -38,50 +38,51 @@
             </div>
 
             <div class="content">
-                <div class="cover cover_top">
+                <div class="cover">
                     <a href="" class="link-main">Статьи</a> 
-                    <span>/</span>
+                    <span class="splitter">/</span>
                     <a href="" class="link-main">Интересное</a> 
-                    <h1>Лица компании HeadHunter</h1>
-                    <p>Не&nbsp;так давно люди искали работу через газеты и&nbsp;обзванивали знакомых. Но&nbsp;всего за&nbsp;10&nbsp;лет мир изменился.</p>
+                    <h1 class="cover-title">Лица компании HeadHunter</h1>
+                    <p class="cover-description">Не&nbsp;так давно люди искали работу через газеты и&nbsp;обзванивали знакомых. Но&nbsp;всего за&nbsp;10&nbsp;лет мир изменился.</p>
                     <div class="activities">
-                        <span class="pub-date">15&nbsp; ноября 2015</span>
-                        <span class="views">143</span>
-                        <span class="replies">4</span>
+                        <span class="activity-publication-date">15&nbsp; ноября 2015</span>
+                        <span class="activity-views">143</span>
+                        <span class="activity-replies">4</span>
                     </div>
                 </div>
 
-                <div class="main main_center">
-                    <div class="advertisement">
-                        <div class="head">
-                            <h2>HeadHunter</h2>
-                            <img src="images/logo.svg" alt="hh.ru">
+                <div class="main">
+                    <div class="recommendations">
+                        <div class="recommendation-header">
+                            <h2 class="recommendation-title">HeadHunter</h2>
+                            <img class="recommendation-logo" src="images/logo.svg" alt="hh.ru">
                             <a href="" class="link-main">www.hh.ru</a>
                         </div>
-                        <div class="description">
+                        <div class="recommendation-description">
                             <p>Строительтсво, недвижимость, эксплуатация, проектирование</p>
-                            <a href="" class "link-main">Вакансии компании</a>
+                            <a href="" class="link-main">Вакансии компании</a>
                         </div>
                     </div> 
+
                     <div class="employees">
                         <div class="employee">
                             <h3 class="employee-name">Ксения Колосова</h3>
                             <p class="employee-position">Руководитель проекта: &laquo;Все, что вы&nbsp;видите на&nbsp;наших сайтах, было создано именно нами и&nbsp;нашими руками&raquo;.</p>
-                            <img src="images/photo1.jpeg" alt="Ксения Колосова">
+                            <img class="employee-photo" src="images/photo1.jpeg" alt="Ксения Колосова">
                             <p class="emoloyee-history">Раньше Ксения целенаправленно собиралась стать переводчиком французского языка, но&nbsp;поступила на&nbsp;физмат, а&nbsp;французский был забыт до&nbsp;уровня &laquo;жемапель КсенИ&raquo;. Сейчас эта хрупкая девушка руководит сразу четырьмя командами разработки в&nbsp;HeadHunter! С&nbsp;нами с&nbsp;2012&nbsp;года.</p>
                         </div>
 
                         <div class="employee">
                             <h3 class="employee-name">Анна Федорченко</h3>
                             <p class="employee-position">Менеджер проекта: &laquo;Мы&nbsp;верим в&nbsp;то, что настоящая работа обязательно должна быть любимой. Так гораздо интереснее, чем сидеть на&nbsp;работе и&nbsp;бессмысленно отбывать часы&raquo;.</p>
-                            <img src="images/photo2.jpeg" alt="Анна Федорченко">
+                            <img class="employee-photo" src="images/photo2.jpeg" alt="Анна Федорченко">
                             <p class="emoloyee-history">В&nbsp;2008 году Аня стала вторым по&nbsp;счету сотрудником в&nbsp;нашем только что открывшемся колл-центре в&nbsp;Ярославле, а&nbsp;в&nbsp;2012 году переместилась на&nbsp;позицию руководителя службы технической поддержки и&nbsp;секретарей! Теперь Аня вдохновенно трудится в&nbsp;отделе веб-сервисов в&nbsp;Москве, помогая нашему порталу день за&nbsp;днем становиться лучше.</p>
                         </div>
 
                         <div class="employee">
                             <h3 class="employee-name">Максим Юдин</h3>
                             <p class="employee-position">Разработчик мобильных приложений: &laquo;У&nbsp;нас ценят свободу творчества и&nbsp;предпринимательский дух&raquo;.</p>
-                            <img src="images/photo3.jpeg" alt="Максим Юдин">
+                            <img class="employee-photo" src="images/photo3.jpeg" alt="Максим Юдин">
                             <p class="emoloyee-history">Максим занимается Android-разработкой с&nbsp;далекого 2007&nbsp;года. Он&nbsp;создавал приложения для самых разных компаний, включая job-сайты, и, по&nbsp;его словам, именно это и&nbsp;побудило его попасть в&nbsp;HeadHunter и&nbsp;сделать по-настоящему удобным поиск работы на&nbsp;смартфонах. Сейчас Максим довольно часто выступает на&nbsp;конференциях с&nbsp;профильными докладами и&nbsp;продолжает разрабатывать собственные приложения.</p>
                         </div>
                     </div>
@@ -89,8 +90,14 @@
 
                 <div class="feedback">
                     <form class="comment">
-                        <input type="text" placeholder="Comment's title..." class="comment comment-title">
-                        <input type="textarea" placeholder="Your comment..." class="comment comment-body">
+                        <div class="comment-control">
+                            <label class="label-main" for="title">Тема комментария</label>
+                            <input type="text" id="title" class="comment-control-title">
+                        </div>
+                        <div class="comment-control">
+                            <label class="label-main" for="reply">Комментарий</label>
+                            <textarea class="comment-control-body" id="reply"></textarea>
+                        </div>
                         <button type="submit" class="button-main">Отправить</button>
                     </form>
                 </div>
