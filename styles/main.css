@@ -13,13 +13,13 @@ body {
 }
 
 .button-main {
-    color: #fff;
+    padding: 0 15px;
     background-color: #0f8fee;
     border: 1px solid #0f8fee;
-    width: 100px;
     height: 38px;
     font-size: 14px;
     text-align: center;
+    color: #fff;
 }
 
 .button-main:active {
@@ -41,9 +41,7 @@ body {
 }
 
 .link-main_dimmed {
-    font-size: 13px;
     color: #999;
-    text-decoration: none;
 }
 
 .link-main_dimmed:hover {
@@ -51,15 +49,14 @@ body {
 }
 
 .splitter {
-    font-size: 13px;
     color: #999;
 }
 
 .wrapper {
     width: 1280px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
     font-size: 14px;
+    font-family: Arial, sans-serif;
     line-height: 1.57;
 }
 
@@ -68,15 +65,18 @@ body {
     color: #1e1e1e;
 }
 
+.search {
+    font-size: 14px;
+}
 
 .search-name {
     margin: auto 0;
     padding-left: 15px;
     height: 34px;
     border: 1px solid #cbd1d4;
-    font-size: 14px;
+    font-size: inherit;
     color: #333;
-    width: 660px;
+    width: 100%;
 }
 
 .search-name:focus {
@@ -87,12 +87,14 @@ body {
     margin: auto 0;
     height: 38px;
     border: 1px solid #cbd1d4;
-    font-size: 14px;
+    font-size: inherit;
     color: #333;
     background-color: #f9f9f9;
     background-image: url('images/select.svg');
     background-repeat: no-repeat;
     background-position: right center;
+    padding: 0 15px 0 0;
+    -moz-appearance: none;
 }
 
 .search-type:hover {
@@ -111,7 +113,7 @@ body {
 }
 
 .main {
-    width: 70%;
+    width: 931px;
     margin: 0 auto;
 }
 
@@ -124,12 +126,13 @@ body {
 .cover {
     margin: 0 auto 61px;
     height: 665px;
-    font-family: ProximaNovaCondensed, Arial, sans-serif;
     font-size: 24px;
+    font-family: ProximaNovaCondensed, Arial, sans-serif;
+    text-align: center;
     color: #fff;
     line-height: 1.18;
-    text-align: center;
-    background: #00f;
+    background: url('images/faces.jpg');
+    background-size: cover;
 }
 
 .cover-title {
@@ -138,6 +141,7 @@ body {
 }
 
 .cover-content {
+    font-size: 13px;
     padding: 10%;
 }
 
@@ -170,7 +174,9 @@ body {
 }
 
 .employee {
-    margin: 0 auto 40px;
+    margin: 0 0 40px 0;
+    width: 770px;
+    font-size: 18px;
 }
 
 .employee-name {
@@ -180,8 +186,6 @@ body {
 
 .employee-position {
     margin: 0 0 15px;
-    width: 770px;
-    font-size: 18px;
 }
 
 .employee-photo {
@@ -190,15 +194,13 @@ body {
 
 .emoloyee-history {
     margin: 0 0 15px;
-    font-size: 18px;
-    width: 770px;
 }
 
 .feedback {
     border: 1px solid #e1e1e1;
     margin: 0 auto 30px;
     padding: 10px;
-    width: 70%;
+    width: 931px;
 }
 
 .comment-control-title {
