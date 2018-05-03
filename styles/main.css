@@ -119,7 +119,6 @@ body {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    padding: 15px 0;
 }
 
 .search-input {
@@ -153,8 +152,11 @@ body {
 }
 
 .menu {
-    display: flex;
     background: #333;
+}
+
+.menu-wrapper {
+    display: flex;
 }
 
 .menu-item {
@@ -173,9 +175,8 @@ body {
     margin: 0 -15px;
 }
 
-.page-content {
+.main {
     margin: 0 auto;
-    border-bottom: 1px solid #e1e1e1;
 }
 
 .cover {
@@ -186,7 +187,6 @@ body {
     text-align: center;
     color: #fff;
     line-height: 1.18;
-    max-width: none;
     background: url('images/faces.png');
     background-size: cover;
 }
@@ -208,6 +208,18 @@ body {
 
 .activities {
     font-size: 12px;
+}
+
+.activity-views {
+    background: url('images/eye.png') no-repeat 0 0;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.activity-replies {
+    background: url('images/comment.png') no-repeat 0 0;
+    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .recommendations {
@@ -264,8 +276,8 @@ body {
 
 .feedback {
     border: 1px solid #e1e1e1;
-    margin: 0 auto 30px;
     padding: 10px;
+    margin: 0 auto 30px;
 }
 
 .comment-control-title {
@@ -274,6 +286,59 @@ body {
     height: 34px;
     color: #333;
     border: 1px solid #e1e1e1;
+}
+
+.footer {
+    padding: 25px 0;
+    font-size: 11px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-menu-wrapper {
+    display: flex;
+}
+
+.footer-menu-items {
+    flex-grow: 1;
+}
+
+.footer-menu-item {
+    margin-right: 6px;
+    padding-right: 6px;
+    border-right: 0.5px solid #e2e2e2;
+}
+
+.footer-counters {
+    color: #999;
+}
+
+.social-link {
+    display: inline-block;
+    background: url('images/footer-social__min_.svg') no-repeat;
+    background-size: 127px 30px;
+    width: 22px;
+    height: 15px;
+    text-indent: -9999px;
+}
+
+.social-link_vk {
+    width: 18px;
+}
+
+.social-link_fb {
+    background-position: -19px 0;
+}
+
+.social-link_ok {
+    background-position: -42px 0;
+}
+
+.social-link_tw {
+    background-position: -62px 0;
+}
+
+.social-link_ig {
+    background-position: -111px 0;
 }
 
 .column {
