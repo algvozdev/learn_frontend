@@ -24,7 +24,7 @@ body {
 }
 
 .textarea-main {
-    margin: 0 auto 10px;
+    padding: 0;
     width: 100%;
     height: 200px;
     border: 1px solid #e1e1e1;
@@ -49,7 +49,7 @@ body {
     background-image: url('images/select.svg');
     background-repeat: no-repeat;
     background-position: right center;
-    padding: 0 15px 0 0;
+    padding: 0 15px;
     -moz-appearance: none;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .link-main {
-    font-size: 13px;
+    font-size: inherit;
     color: #08f;
     text-decoration: none;
 }
@@ -131,10 +131,12 @@ body {
 }
 
 .search-advanced {
+    font-size: 13px;
     margin-left: 10px;
 }
 
 .work-in {
+    font-size: 13px;
     margin-left: 50px;
 }
 
@@ -173,27 +175,21 @@ body {
     margin: 0 -15px;
 }
 
-.page-content {
-    margin: 0 auto;
-    border-bottom: 1px solid #e1e1e1;
-}
-
 .cover {
-    margin: 0 auto 61px;
+    margin-bottom: 61px;
     height: 665px;
     font-size: 24px;
     font-family: ProximaNovaCondensed, Arial, sans-serif;
     text-align: center;
     color: #fff;
     line-height: 1.18;
-    max-width: none;
     background: url('images/faces.png');
     background-size: cover;
 }
 
 .cover-title {
     font-size: 72px;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .cover-content {
@@ -211,14 +207,14 @@ body {
 }
 
 .recommendations {
-    margin: 0 0 62px;
+    margin-bottom: 62px;
     padding: 10px;
     border: 1px solid #e1e1e1;
 }
 
 .recommendation-header {
     display: flex;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .recommendation-logo {
@@ -232,12 +228,12 @@ body {
 }
 
 .recommendation-title {
-    margin: 0 auto 5px;
+    margin-bottom: 5px;
     font-size: 48px;
 }
 
 .recommendation-description-item {
-    margin: 0 auto 5px;
+    margin-bottom: 5px;
 }
 
 .employees {
@@ -245,39 +241,37 @@ body {
 }
 
 .employee-name {
-    margin: 0 0 5px;
+    margin-bottom: 5px;
     font-size: 36px;
 }
 
 .employee-position {
-    margin: 0 0 15px;
+    margin-bottom: 15px;
 }
 
 .employee-photo {
-    height: 618px;
     max-width: 100%;
 }
 
 .emoloyee-history {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
 }
 
 .feedback {
     border: 1px solid #e1e1e1;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
     padding: 10px;
 }
 
 .comment-control {
-    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .comment-control-title {
-    margin: 0 auto 10px;
+    margin-bottom: 10px;
     width: 100%;
     height: 34px;
     color: #333;
-    font-size: inherit;
     border: 1px solid #e1e1e1;
 }
 
