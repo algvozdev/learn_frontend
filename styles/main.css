@@ -115,10 +115,25 @@ body {
     margin-right: 20px;
 }
 
+.header-logo-menu {
+    height: 40px;
+}
+
 .search {
     display: flex;
     flex-grow: 1;
     align-items: center;
+}
+
+.header-search {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    width: 100%;
+}
+
+.header-control {
+    display: flex;
 }
 
 .search-input {
@@ -152,11 +167,11 @@ body {
 }
 
 .menu {
-    background: #333;
+    display: flex;
 }
 
 .menu-wrapper {
-    display: flex;
+    background: #333;
 }
 
 .menu-item {
@@ -172,6 +187,7 @@ body {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -266,7 +282,6 @@ body {
 }
 
 .employee-photo {
-    height: 618px;
     max-width: 100%;
 }
 
@@ -341,25 +356,230 @@ body {
     background-position: -111px 0;
 }
 
+.menu-small {
+    display: none;
+}
+
 .column {
     box-sizing: border-box;
     padding: 0 15px;
 }
 
-.column_1 {flex: 0 0 80px;}
-.column_2 {flex: 0 0 160px;}
-.column_3 {flex: 0 0 240px;}
-.column_4 {flex: 0 0 320px;}
-.column_5 {flex: 0 0 400px;}
-.column_6 {flex: 0 0 480px;}
-.column_7 {flex: 0 0 560px;}
-.column_8 {flex: 0 0 640px;}
-.column_9 {flex: 0 0 720px;}
-.column_10 {flex: 0 0 800px;}
-.column_11 {flex: 0 0 880px;}
-.column_12 {flex: 0 0 960px;}
-.column_13 {flex: 0 0 1040px;}
-.column_14 {flex: 0 0 1120px;}
-.column_15 {flex: 0 0 1200px;}
-.column_16 {flex: 0 0 1280px;}
+.column_l-0 {
+    display: none;
+}
+.column_l-1 {
+    flex: 0 0 80px;
+}
+.column_l-2 {
+    flex: 0 0 160px;
+}
+.column_l-3 {
+    flex: 0 0 240px;
+}
+.column_l-4 {
+    flex: 0 0 320px;
+}
+.column_l-5 {
+    flex: 0 0 400px;
+}
+.column_l-6 {
+    flex: 0 0 480px;
+}
+.column_l-7 {
+    flex: 0 0 560px;
+}
+.column_l-8 {
+    flex: 0 0 640px;
+}
+.column_l-9 {
+    flex: 0 0 720px;
+}
+.column_l-10 {
+    flex: 0 0 800px;
+}
+.column_l-11 {
+    flex: 0 0 880px;
+}
+.column_l-12 {
+    flex: 0 0 960px;
+}
+.column_l-13 {
+    flex: 0 0 1040px;
+}
+.column_l-14 {
+    flex: 0 0 1120px;
+}
+.column_l-15 {
+    flex: 0 0 1200px;
+}
+.column_l-16 {
+    flex: 0 0 1280px;
+}
 
+@media (max-width: 1340px) {
+    .wrapper {
+        width: 960px;
+    }
+
+    .social {
+        white-space: nowrap;
+    }
+
+    .column_m-0 {
+        display: none;
+    }
+    .column_m-1 {
+        flex: 0 0 80px;
+    }
+    .column_m-2 {
+        flex: 0 0 160px;
+    }
+    .column_m-3 {
+        flex: 0 0 240px;
+    }
+    .column_m-4 {
+        flex: 0 0 320px;
+    }
+    .column_m-5 {
+        flex: 0 0 400px;
+    }
+    .column_m-6 {
+        flex: 0 0 480px;
+    }
+    .column_m-7 {
+        flex: 0 0 560px;
+    }
+    .column_m-8 {
+        flex: 0 0 640px;
+    }
+    .column_m-9 {
+        flex: 0 0 720px;
+    }
+    .column_m-10 {
+        flex: 0 0 800px;
+    }
+    .column_m-11 {
+        flex: 0 0 880px;
+    }
+    .column_m-12 {
+        flex: 0 0 960px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .wrapper {
+        width: 640px;
+    }
+
+    .cover-title {
+        font-size: 64px;
+    }
+
+    .employee-photo {
+        vertical-align: top;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header-control {
+        align-self: flex-end;
+    }
+
+    .header-search {
+        align-self: flex-start;
+    }
+
+    .column_s-0 {
+        display: none;
+    }
+    .column_s-1 {
+        flex: 0 0 80px;
+    }
+    .column_s-2 {
+        flex: 0 0 160px;
+    }
+    .column_s-3 {
+        flex: 0 0 240px;
+    }
+    .column_s-4 {
+        flex: 0 0 320px;
+    }
+    .column_s-5 {
+        flex: 0 0 400px;
+    }
+    .column_s-6 {
+        flex: 0 0 480px;
+    }
+    .column_s-7 {
+        flex: 0 0 560px;
+    }
+    .column_s-8 {
+        flex: 0 0 640px;
+    }
+
+@media (max-width: 700px) {
+    .wrapper {
+        width: auto;
+    }
+
+    .column {
+        display: block;
+    }
+    .column_xs-0 {
+        display: none;
+    }
+    .column_xs-1 {
+        flex: 0 0 25%;
+    }
+    .column_xs-2 {
+        flex: 0 0 50%;
+    }
+    .column_xs-3 {
+        flex: 0 0 75%;
+    }
+    .column_xs-4 {
+        flex: 0 0 100%;
+    }
+
+    .cover-title {
+        font-size: 48px;
+        line-height: 1.11;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        padding: 4px 0;
+        justify-content: space-between;
+    }
+
+    .cover-title {
+        font-size: 48px;
+    }
+
+    .employee-name {
+        font-size: 24px;
+    }
+
+    .employees {
+        font-size: 14px;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+    
+    .footer-counters {
+        display: none;
+    }
+}
